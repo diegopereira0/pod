@@ -1,0 +1,32 @@
+:root {
+  --primary: #54e6af;
+  --neutral-0: #ffffff;
+  --neutral-100: #c2cbe5;
+  --neutral-200: #5a668a;
+  --neutral-300: #2c344b;
+  --neutral-400: #121725;
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.neutral-0 {
+  color: var(--neutral-0);
+}
+
+.neutral-100 {
+  color: var(--neutral-100);
+}
+
+.neutral-200 {
+  color: var(--neutral-200);
+}
+
+.neutral-300 {
+  color: var(--neutral-300);
+}
+
+.neutral-400 {
+  color: var(--neutral-400);
+}

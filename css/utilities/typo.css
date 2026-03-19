@@ -1,0 +1,11 @@
+.font-title {
+  font:
+    300 3.25rem/1.2 "Chivo",
+    sans-serif;
+}
+
+.font-body {
+  font:
+    300 1.125rem/1.5 "Chivo",
+    sans-serif;
+}
