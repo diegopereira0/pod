@@ -2,12 +2,35 @@ body {
   background: var(--neutral-400);
 }
 
+.nav {
+  padding-top: 6.375rem;
+  padding-bottom: 6.375rem;
+}
+
 /* Hero */
 
+.hero {
+  position: relative;
+}
+
+.hero::after {
+  content: url('../assets/desktop/bg-pattern-dots.svg');
+  position: absolute;
+  right: 0;
+  bottom: -56px;
+}
+
+.hero-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -5;
+}
 .hero-info {
   background: var(--neutral-400);
   padding-top: 5.5rem;
   padding-right: 3.5rem;
+  max-width: 724px;
 }
 .hero-info h1 {
   text-transform: uppercase;
@@ -16,6 +39,70 @@ body {
 }
 
 .hero-info p {
-  max-width: 48ch;
+  max-width: 40ch;
   margin-bottom: 2.5rem;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Input */
+.email-sub {
+  background: var(--neutral-300);
+  margin-bottom: 4rem;
+  padding: 5px;
+  border-radius: 500px;
+  max-width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.email-sub input {
+  background: none;
+  border: none;
+  color: var(--neutral-0);
+  padding-left: 1.5rem;
+  flex: 1;
+}
+
+.email-sub input::placeholder {
+  color: var(--neutral-200);
+}
+
+.email-sub input:focus {
+  background: linear-gradient(
+    90deg,
+    rgba(18, 23, 37, 1) 0%,
+    rgba(18, 23, 37, 0) 85%
+  );
+  outline: none;
+  color: var(--neutral-0);
+  /* border: 1px solid var(--neutral-200);
+  border-right: none; */
+  border-radius: 500px 0 0 500px;
+}
+
+.email-sub button {
+  border: none;
+  background-color: var(--primary);
+  color: var(--neutral-400);
+  border-radius: 500px;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.email-sub button:hover {
+  background: #b3ffe2;
+}
+
+.email-sub input,
+.email-sub button {
+  font:
+    700 1rem/2 "Chivo",
+    sans-serif;
 }
