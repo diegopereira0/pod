@@ -9,3 +9,15 @@
     300 1.125rem/1.5 "Chivo",
     sans-serif;
 }
+
+@media (max-width: 1000px) {
+  .font-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .font-title {
+    font-size: 1.625rem;
+  }
+}

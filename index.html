@@ -24,56 +24,67 @@
   </head>
 
   <body>
-    <nav class="nav container">
-      <a href="./" class="logo">
-        <img src="./assets/desktop/logo.svg" alt="Pod logo" />
-      </a>
-    </nav>
+    <div class="photo-background">
+      <nav class="nav container">
+        <a href="./" class="logo">
+          <img src="./assets/desktop/logo.svg" alt="Pod logo" />
+        </a>
+      </nav>
 
-    <div class="hero">
-      <div class="container">
-        <div class="hero-info">
-          <h1 class="font-title primary">
-            Publish your podcasts <span class="neutral-0">everywhere.</span>
-          </h1>
+      <div class="hero">
+        <div class="container">
+          <div class="hero-info">
+            <h1 class="font-title primary">
+              Publish your podcasts <span class="neutral-0">everywhere.</span>
+            </h1>
 
-          <p class="font-body neutral-100">
-            Upload your audio to Pod with a single click. We’ll then distribute
-            your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket
-            Casts and more!
-          </p>
+            <p class="font-body neutral-100">
+              Upload your audio to Pod with a single click. We’ll then
+              distribute your podcast to Spotify, Apple Podcasts, Google
+              Podcasts, Pocket Casts and more!
+            </p>
 
-          <div class="email-sub">
-            <input type="text" placeholder="Email address" />
-            <button>Request access</button>
+            <div class="email-sub">
+              <input type="text" placeholder="Email address" />
+              <button>Request access</button>
+            </div>
+            <ul class="partners-logos">
+              <li>
+                <img src="./assets/desktop/spotify.svg" alt="Spotify logo" />
+              </li>
+              <li>
+                <img
+                  src="./assets/desktop/apple-podcast.svg"
+                  alt="Apple podcast logo"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/desktop/google-podcasts.svg"
+                  alt="Google podcast logo"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/desktop/pocket-casts.svg"
+                  alt="Pocket Casts logo"
+                />
+              </li>
+            </ul>
           </div>
-          <ul class="partners-logos">
-            <li>
-              <img src="./assets/desktop/spotify.svg" alt="Spotify logo" />
-            </li>
-            <li>
-              <img
-                src="./assets/desktop/apple-podcast.svg"
-                alt="Apple podcast logo"
-              />
-            </li>
-            <li>
-              <img
-                src="./assets/desktop/google-podcasts.svg"
-                alt="Google podcast logo"
-              />
-            </li>
-            <li>
-              <img
-                src="./assets/desktop/pocket-casts.svg"
-                alt="Pocket Casts logo"
-              />
-            </li>
-          </ul>
         </div>
-      </div>
-      <div class="hero-img">
-        <img src="./assets/desktop/image-host.jpg" alt="" />
+        <picture class="hero-img">
+          <source
+            media="(max-width: 1000px)"
+            srcset="./assets/tablet/image-host.jpg"
+          />
+          <img
+            src="./assets/desktop/image-host.jpg"
+            alt="Man speaking on a microphone at a studio"
+            width="888"
+            height="640"
+          />
+        </picture>
       </div>
     </div>
   </body>
